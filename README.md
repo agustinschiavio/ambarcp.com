@@ -1,4 +1,4 @@
-# Payflo.dev - Astro 5.7 Implementation
+# Ambar.dev - Astro 5.7 Implementation
 
 This is a modern reimplementation of the [salsa.dev](https://www.salsa.dev/) website using Astro 5.7, following the latest best practices.
 
@@ -12,7 +12,7 @@ This is a modern reimplementation of the [salsa.dev](https://www.salsa.dev/) web
 - Accessibility-friendly components
 - Fast page transitions with View Transitions API
 
-[<img width="609" height="500" alt="home-page" src="https://github.com/user-attachments/assets/1e311553-3314-4c40-96f6-50daa5cf36f0" />](https://payflo.corytrimm.com)
+[<img width="609" height="500" alt="home-page" src="https://github.com/user-attachments/assets/1e311553-3314-4c40-96f6-50daa5cf36f0" />](https://ambar.corytrimm.com)
 
 ## Project Structure
 

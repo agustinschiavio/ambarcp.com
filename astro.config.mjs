@@ -5,7 +5,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://payflo.dev',
+  site: 'https://ambarcp.com',
   output: 'static',
   prefetch: true,
   integrations: [

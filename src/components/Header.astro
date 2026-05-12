@@ -9,10 +9,10 @@ const navItems = [
 ];
 ---
 
-<header class="sticky top-0 z-50 w-full bg-premium-neutral/80 backdrop-blur-md border-b border-premium-detail" role="banner">
+<header class="sticky top-0 z-50 w-full bg-primary-dark/95 backdrop-blur-md border-b border-white/10">
   <div class="container-custom flex items-center h-20">
-    <a href="/" class="flex items-center transition-transform duration-300 hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-signature-accent focus:ring-offset-2 rounded" aria-label="Payflo home">
-      <Image src={logoSrc} alt="Payflo Logo" width={120} height={40} class="transition-all duration-300 hover:brightness-110 focus:brightness-110" />
+    <a href="/" class="flex items-center transition-transform duration-300 hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-signature-accent focus:ring-offset-2 rounded" aria-label="Ambar home">
+      <Image src={logoSrc} alt="Ambar Logo" width={155} height={52} class="transition-all duration-300 hover:brightness-110 focus:brightness-110" />
     </a>
     
     <!-- Desktop Nav -->
@@ -20,7 +20,7 @@ const navItems = [
       {navItems.map(item => (
         <a 
           href={item.href} 
-          class="text-typography hover:text-signature-accent focus:text-signature-accent transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-signature-accent focus:ring-offset-2 rounded px-2 py-1"
+          class="text-white text-[22px] font-large hover:text-signature-accent focus:text-signature-accent transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-signature-accent focus:ring-offset-2 rounded px-2 py-1"
         >
           {item.name}
         </a>

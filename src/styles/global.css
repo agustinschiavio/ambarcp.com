@@ -3,16 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --gradient-purple-blue: linear-gradient(135deg, #7928CA 0%, #0070F3 100%);
+  --gradient-purple-blue: linear-gradient(135deg, #0e1a26 0%, #A46B3C 100%);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+
 }
 
 body {
-  @apply font-sans text-payflo-dark;
-  position: relative; /* For scroll progress bar */
+  @apply font-sans text-typography bg-premium-neutral;
+  position: relative;
 }
 
 /* ===== Basic Animations ===== */
@@ -123,7 +125,7 @@ body {
 }
 
 .btn-secondary {
-  @apply bg-premium-neutral text-payflo-dark border border-premium-detail hover:bg-premium-neutral;
+  @apply bg-white text-typography border border-gray-200 hover:bg-gray-50;
 }
 
 .container-custom {
@@ -136,7 +138,7 @@ body {
 
 /* ===== Cards and UI Elements ===== */
 .feature-card {
-  @apply bg-premium-neutral rounded-xl p-6 shadow-lg transition-all duration-300;
+  @apply bg-white rounded-xl p-6 shadow-lg transition-all duration-300;
   transform: translateZ(0); /* For better performance */
 }
 
@@ -152,7 +154,7 @@ header {
 }
 
 header.scrolled {
-  @apply shadow-md bg-premium-neutral/95;
+  @apply shadow-md bg-white/95;
   backdrop-filter: blur(8px);
 }
 
@@ -274,12 +276,12 @@ nav a:focus::after {
 
 /* ===== Testimonial Card Effects ===== */
 .testimonial-card {
-  @apply bg-payflo-gray rounded-xl p-8 transition-all duration-300;
+  @apply bg-premium-neutral rounded-xl p-8 transition-all duration-300;
 }
 
 .testimonial-card:hover,
 .testimonial-card:focus-within {
-  @apply bg-premium-neutral shadow-lg;
+  @apply bg-white shadow-lg;
   transform: translateY(-5px);
 }
 
@@ -310,32 +312,4 @@ nav a:focus::after {
 
 .skip-link:focus {
   top: 6px;
-}
-
-@layer base {
-  html {
-    @apply scroll-smooth;
-  }
-
-  body {
-    @apply bg-premium-neutral text-typography font-sans;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-heading text-primary-dark;
-  }
-
-  a,
-  button {
-    @apply transition-colors duration-300;
-  }
-
-  ::selection {
-    @apply bg-signature-accent text-premium-neutral;
-  }
 }
