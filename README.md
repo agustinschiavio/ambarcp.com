@@ -1,4 +1,4 @@
-# Ambar.dev - Astro 5.7 Implementation
+# - Ambar.dev - Astro 5.7 Implementation
 
 This is a modern reimplementation of the [salsa.dev](https://www.salsa.dev/) website using Astro 5.7, following the latest best practices.
 
