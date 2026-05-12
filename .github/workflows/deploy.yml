@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Install sharp
+        run: pnpm add -D sharp
+
       - name: Build
         run: pnpm build
 
