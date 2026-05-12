@@ -15,9 +15,6 @@ const {
   description = "Ayudamos a empresas y personas a alcanzar sus objetivos financieros"
 } = Astro.props;
 
-// Preload critical assets
-const faviconImg = await getImage({src: '/favicon.png', width: 32, height: 32});
----
 
 <!doctype html>
 <html lang="en">
@@ -25,7 +22,7 @@ const faviconImg = await getImage({src: '/favicon.png', width: 32, height: 32});
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href={faviconImg.src} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
