@@ -102,7 +102,7 @@ body {
 }
 
 .btn:focus {
-  outline: 2px solid theme('colors.signature-accent');
+  outline: 2px solid theme('colors.payflo-purple');
   outline-offset: 2px;
 }
 
@@ -119,11 +119,11 @@ body {
 }
 
 .btn-primary {
-  @apply bg-signature-accent text-white hover:bg-opacity-90;
+  @apply bg-payflo-purple text-white hover:bg-opacity-90;
 }
 
 .btn-secondary {
-  @apply bg-premium-neutral text-payflo-dark border border-premium-detail hover:bg-premium-neutral;
+  @apply bg-white text-payflo-dark border border-gray-200 hover:bg-gray-50;
 }
 
 .container-custom {
@@ -136,7 +136,7 @@ body {
 
 /* ===== Cards and UI Elements ===== */
 .feature-card {
-  @apply bg-premium-neutral rounded-xl p-6 shadow-lg transition-all duration-300;
+  @apply bg-white rounded-xl p-6 shadow-lg transition-all duration-300;
   transform: translateZ(0); /* For better performance */
 }
 
@@ -152,7 +152,7 @@ header {
 }
 
 header.scrolled {
-  @apply shadow-md bg-premium-neutral/95;
+  @apply shadow-md bg-white/95;
   backdrop-filter: blur(8px);
 }
 
@@ -168,7 +168,7 @@ nav a::after {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: theme('colors.signature-accent');
+  background-color: theme('colors.payflo-purple');
   transition: width 0.3s ease;
 }
 
@@ -178,7 +178,7 @@ nav a:focus::after {
 }
 
 .active-nav-link {
-  @apply text-signature-accent;
+  @apply text-payflo-purple;
 }
 
 .active-nav-link::after {
@@ -191,7 +191,7 @@ nav a:focus::after {
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(to right, theme('colors.signature-accent'), theme('colors.primary-dark'));
+  background: linear-gradient(to right, theme('colors.payflo-purple'), theme('colors.payflo-blue'));
   z-index: 100;
   width: 0%;
   transition: width 0.1s ease;
@@ -223,7 +223,7 @@ nav a:focus::after {
 }
 
 .faq-summary-open {
-  @apply text-signature-accent;
+  @apply text-payflo-purple;
 }
 
 /* ===== Mobile Menu Animations ===== */
@@ -279,13 +279,13 @@ nav a:focus::after {
 
 .testimonial-card:hover,
 .testimonial-card:focus-within {
-  @apply bg-premium-neutral shadow-lg;
+  @apply bg-white shadow-lg;
   transform: translateY(-5px);
 }
 
 /* ===== Focus Indicators ===== */
 *:focus {
-  outline: 2px solid theme('colors.signature-accent');
+  outline: 2px solid theme('colors.payflo-purple');
   outline-offset: 2px;
 }
 
@@ -299,7 +299,7 @@ nav a:focus::after {
   position: absolute;
   top: -40px;
   left: 6px;
-  background: theme('colors.signature-accent');
+  background: theme('colors.payflo-purple');
   color: white;
   padding: 8px;
   border-radius: 4px;
@@ -310,32 +310,4 @@ nav a:focus::after {
 
 .skip-link:focus {
   top: 6px;
-}
-
-@layer base {
-  html {
-    @apply scroll-smooth;
-  }
-
-  body {
-    @apply bg-premium-neutral text-typography font-sans;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-heading text-primary-dark;
-  }
-
-  a,
-  button {
-    @apply transition-colors duration-300;
-  }
-
-  ::selection {
-    @apply bg-signature-accent text-premium-neutral;
-  }
 }
