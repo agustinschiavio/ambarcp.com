@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const team = [
+  {
+    name: "Nombre Apellido",
+    role: "Socio / Managing Partner",
+    bio: "Descripción breve del perfil, experiencia y foco profesional.",
+    linkedin: "#",
+  },
+  // Agregar más miembros del equipo aquí
+];
+---
+
+<Layout title="Equipo — Ambar Capital Partners">
+  <section class="pt-28 pb-20 bg-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/grid-pattern.svg');"></div>
+    </div>
+
+    <div class="container-custom relative">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold">Equipo</h1>
+        <p class="mt-6 text-xl text-gray-600">
+          Las relaciones de largo plazo empiezan por conocer a las personas.
+        </p>
+      </div>
+
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {team.map((member) => (
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-premium-detail hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div class="w-20 h-20 rounded-full bg-premium-neutral border-2 border-signature-accent mb-6 flex items-center justify-center">
+              <span class="text-2xl font-bold text-signature-accent">
+                {member.name.split(' ').map((n: string) => n[0]).join('')}
+              </span>
+            </div>
+            <h3 class="text-xl font-semibold">{member.name}</h3>
+            <p class="text-signature-accent font-medium mt-1">{member.role}</p>
+            <p class="mt-4 text-gray-600 leading-relaxed">{member.bio}</p>
+            {member.linkedin !== "#" && (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-4 inline-block text-sm text-signature-accent hover:underline"
+              >
+                LinkedIn →
+              </a>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
