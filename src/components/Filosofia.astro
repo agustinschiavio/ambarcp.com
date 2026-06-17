@@ -1,28 +1,19 @@
 ---
 const steps = [
   {
-    title: "Disciplina financiera",
+    number: "01",
+    title: "Disciplina",
     description: "Tomamos decisiones consistentes y racionales, con un proceso claro que se mantiene independientemente de las condiciones de mercado.",
   },
   {
-    title: "Alineación de intereses",
-    description: "Buscamos estructuras donde el éxito sea compartido y los incentivos sean claros y transparentes para todas las partes.",
+    number: "02",
+    title: "Alineación de Intereses",
+    description: "Buscamos estructuras donde el éxito sea compartido y los incentivos sean claros y transparentes para todos.",
   },
   {
-    title: "Independencia y objetividad",
-    description: "Brindamos asesoramiento basado en análisis objetivo y en el mejor interés de cada cliente, sin conflictos de producto.",
-  },
-  {
-    title: "Honestidad intelectual",
-    description: "Decimos lo que creemos que es correcto, aun cuando no sea la respuesta más cómoda. Nunca prometemos lo que no podemos sostener.",
-  },
-  {
-    title: "Estrategia con foco en la ejecución",
-    description: "Traducimos el análisis financiero en decisiones concretas y accionables. El plan tiene valor solo si se ejecuta con disciplina.",
-  },
-  {
-    title: "Confianza de largo plazo",
-    description: "Priorizamos relaciones duraderas sobre transacciones aisladas. La confianza se construye con consistencia, no con promesas.",
+    number: "03",
+    title: "Independencia",
+    description: "Brindamos asesoramiento basado en análisis objetivo y en el mejor interés de cada cliente, con criterio propio y visión de largo plazo.",
   },
 ];
 ---
@@ -40,7 +31,7 @@ const steps = [
       </p>
     </div>
     
-    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
       {steps.map((step, index) => (
         <div 
           class={`bg-white rounded-xl p-8 shadow-lg border border-gray-100 animate-on-scroll delay-${index + 2} group hover:shadow-xl transition-all duration-300 hover:-translate-y-2`}
