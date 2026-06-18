@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -154,7 +156,7 @@ header {
 }
 
 header.scrolled {
-  @apply shadow-md bg-white/95;
+  @apply shadow-sm bg-white/95;
   backdrop-filter: blur(8px);
 }
 

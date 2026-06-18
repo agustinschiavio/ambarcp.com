@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '../assets/hero-1.jpg';
+---
+
+<section class="pt-28 pb-12 md:pt-36 md:pb-16 overflow-hidden relative">
+  <div class="container-custom relative">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <h1 class="animate-on-scroll delay-0 font-heading text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight">
+          Vos conocés tus objetivos.
+        </h1>
+        <h2 class="animate-on-scroll delay-1 font-heading text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight mt-4">
+          <span class="text-premium-neutral" style="background-color: #0E1A26; padding: 0 10px 4px; box-decoration-break: clone; -webkit-box-decoration-break: clone;">Nosotros te ayudamos a lograrlos.</span>
+        </h2>
+        <p class="animate-on-scroll delay-1 mt-6 text-xl text-typography/80 max-w-lg">
+          Ayudamos a empresas y personas a alcanzar sus objetivos financieros — con independencia, alineación de intereses y disciplina.
+        </p>
+        <div class="animate-on-scroll delay-2 mt-8">
+          <a href="#Servicios" class="group btn text-lg bg-primary-dark text-white hover:bg-primary-dark/90">
+  Conocé más<span class="inline-block ml-1 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all duration-200">↗</span>
+</a>
+        </div>
+      </div>
+
+      <div class="animate-on-scroll delay-4">
+        <div class="relative hover-zoom">
+          <div class="absolute -inset-0.5 bg-gradient-to-r from-signature-accent to-primary-dark rounded-xl blur opacity-30 transition-opacity duration-300 hover:opacity-50"></div>
+          <div class="relative bg-premium-neutral rounded-xl shadow-xl overflow-hidden">
+            <Image
+              src={heroImage}
+              alt="money"
+              class="w-full h-auto transition-all duration-500"
+              width={700}
+              height={500}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

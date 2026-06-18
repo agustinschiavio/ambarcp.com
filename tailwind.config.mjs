@@ -12,7 +12,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter Variable', 'sans-serif'],
-        heading: ['Canela', 'serif'],
+        heading: ['Cormorant Garant', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out forwards',
