@@ -6,11 +6,11 @@
 
   <div class="container-custom relative">
     <div class="max-w-2xl mx-auto text-center animate-on-scroll">
-      <h2 class="font-heading text-4xl md:text-5xl font-semibold tracking-tight">
-        Reservá tu lugar.<br />Sin compromiso.
+      <h2 class="font-heading text-4xl md:text-5xl font-light tracking-tight whitespace-nowrap">
+        Reservá tu lugar
       </h2>
-      <p class="mt-4 text-xl opacity-90">
-        Una conversación para ver si podemos ayudarte. Sin presión, sin productos para vender.
+      <p class="mt-4 text-lg opacity-90">
+        Una conversación honesta. Sin presión, sin productos para vender.
       </p>
 
       <!-- Primary CTA: Calendar -->
@@ -46,8 +46,7 @@
 
       <!-- Contact Form -->
       <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
+        id="contact-form"
         class="mt-8 space-y-4 text-left"
       >
         <input type="hidden" name="access_key" value="a5b2cf8c-f78f-491c-bba0-9a5c5aeadd28" />
@@ -82,7 +81,31 @@
         >
           Enviar consulta
         </button>
+
+        <!-- Success message -->
+        <div id="form-success" class="hidden text-center py-4">
+          <p class="text-white font-medium">¡Mensaje enviado! Te contactamos a la brevedad.</p>
+        </div>
       </form>
+
+      <script>
+        const form = document.getElementById('contact-form') as HTMLFormElement;
+        const success = document.getElementById('form-success');
+
+        form?.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const data = new FormData(form);
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: data,
+          });
+          if (res.ok) {
+            form.reset();
+            form.querySelectorAll('input, textarea, button').forEach(el => (el as HTMLElement).style.display = 'none');
+            success?.classList.remove('hidden');
+          }
+        });
+      </script>
     </div>
   </div>
 </section>
