@@ -315,3 +315,89 @@ nav a:focus::after {
 .skip-link:focus {
   top: 6px;
 }
+
+/* ===== CTA Section Button Styles ===== */
+.btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background: white;
+  color: #A46B3C;
+  transition: all 0.3s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1);
+}
+
+.btn-cta-primary:focus {
+  outline: 2px solid theme('colors.signature-accent');
+  outline-offset: 2px;
+}
+
+.btn-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  background: transparent;
+  transition: all 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cta-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.btn-cta-secondary:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* ===== Floating WhatsApp Button ===== */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  z-index: 40;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.floating-whatsapp:focus {
+  outline: 2px solid #A46B3C;
+  outline-offset: 2px;
+}

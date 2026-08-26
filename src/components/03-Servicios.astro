@@ -20,15 +20,15 @@ const services = [
 <section id="Servicios" class="py-32 bg-premium-neutral relative overflow-hidden">
   <div class="container-custom relative">
     <div class="text-center max-w-3xl mx-auto">
-      <h2 class="animate-on-scroll delay-0 font-heading text-4xl md:text-5xl font-light tracking-tight">Servicios</h2>
-      <p class="mt-4 text-lg text-gray-500 whitespace-nowrap">
+      <h2 class="font-heading text-4xl md:text-5xl font-light tracking-tight">Servicios</h2>
+      <p class="mt-4 text-lg text-gray-500">
         Dos áreas de foco. Un mismo enfoque.
       </p>
     </div>
 
     <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
       {services.map((service, index) => (
-        <div class={`bg-white rounded-xl p-10 border border-premium-detail animate-on-scroll delay-${index + 2} group hover:border-signature-accent/30 transition-all duration-500`}>
+        <div class="bg-white rounded-xl p-10 border border-premium-detail group hover:border-signature-accent/30 transition-all duration-500">
           <span class="inline-block text-xs font-semibold uppercase tracking-widest text-primary-dark mb-4">{service.tag}</span>
           <div class="flex items-start gap-5 mb-6">
             <div class="text-signature-accent flex-shrink-0 mt-1" set:html={service.icon} />
